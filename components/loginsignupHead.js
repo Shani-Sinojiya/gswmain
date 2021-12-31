@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-const loginsignupHead = () => {
+export default function LoginSignupHead() {
   return (
     <Head>
       <link rel="stylesheet" href="/css/all.min.css" />
       <link rel="stylesheet" href="/css/style.login.signup.min.css" />
       <link rel="stylesheet" href="/css/materialdesignicons.min.css" />
-      
+
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta
         name="msapplication-TileImage"
@@ -92,6 +92,4 @@ const loginsignupHead = () => {
       <link rel="manifest" href="/manifest.json" />
     </Head>
   );
-};
-
-export default loginsignupHead;
+}

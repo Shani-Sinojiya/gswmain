@@ -1,17 +1,17 @@
 import Head from "next/head";
-import LoginCom from "../components/LoginCom";
+import SignUp from "../components/SignUp";
 import LoginSignupHead from "../components/loginsignupHead";
 
-const login = () => {
+const signup = () => {
   return (
     <>
       <Head>
-        <title>Log In | Gujrati Study Web</title>
+        <title>Sign Up | Gujrati Study Web</title>
       </Head>
       <LoginSignupHead />
-      <LoginCom />
+      <SignUp />
     </>
   );
 };
 
-export default login;
+export default signup;

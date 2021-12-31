@@ -4,15 +4,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const SignUp = () => {
-	const router = useRouter();
-	const [loding, setLoding] = useState(false);
-	const [Data, setData] = useState({
-		userName: "",
-		email: "",
-		mobileNo: "",
-		password: "",
-		re_pass: "",
-	});
+  const router = useRouter();
+  const [loding, setLoding] = useState(false);
+  const [Data, setData] = useState({
+    userName: "",
+    email: "",
+    mobileNo: "",
+    password: "",
+    re_pass: "",
+  });
   const mainStyle = {
     background: "#f8f8f8",
     padding: "33px 0",
