@@ -1,0 +1,89 @@
+// mixin
+@mixin border-radius($value) {
+  border-radius: $value;
+}
+@mixin background-size($value) {
+  background-size: $value;
+}
+@mixin background-gradient-three($color1, $color2, $color3) {
+  background: linear-gradient($color1, $color2, $color3);
+}
+@mixin background-gradient-six(
+  $color1,
+  $color2,
+  $color3,
+  $color4,
+  $color5,
+  $color6
+) {
+  background: linear-gradient(
+    $color1,
+    $color2,
+    $color3,
+    $color4,
+    $color5,
+    $color6
+  );
+}
+@mixin transform($value) {
+  transform: $value;
+}
+@mixin box-shadow($value) {
+  box-shadow: $value;
+}
+@mixin filter($value) {
+  filter: $value;
+}
+@mixin transition($value) {
+  transition: $value;
+}
+@mixin animation($value) {
+  animation: $value;
+}
+@mixin transform-origin($value) {
+  transform-origin: $value;
+}
+@mixin appearance($value) {
+  appearance: $value !important;
+}
+@mixin box-shadow-input($value) {
+  box-shadow: $value !important;
+}
+
+//flex
+@mixin flex-wrap($value) {
+  flex-wrap: $value;
+}
+@mixin flex-direction($value) {
+  flex-direction: $value;
+}
+@mixin flex-flow($value) {
+  flex-flow: $value;
+}
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+@mixin align-items($value) {
+  align-items: $value;
+}
+@mixin order($value) {
+  order: $value;
+}
+@mixin flex($value) {
+  flex: $value;
+}
+
+@mixin input-placeholder($value) {
+  &::-webkit-input-placeholder {
+    color: $value;
+  }
+  &::-moz-placeholder {
+    color: $value;
+  }
+  &:-ms-input-placeholder {
+    color: $value;
+  }
+  &:-moz-placeholder {
+    color: $value;
+  }
+}
