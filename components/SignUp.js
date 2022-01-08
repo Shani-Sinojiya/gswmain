@@ -39,7 +39,7 @@ const SignUp = () => {
         "Content-Type": "application/json",
       };
       let reqOptions = {
-        url: "http://localhost:8080/api/auth/register",
+        url: "http://192.168.0.112:8080/api/auth/register",
         method: "POST",
         headers: headersList,
         data: data,

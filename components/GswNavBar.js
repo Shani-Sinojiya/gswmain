@@ -71,10 +71,14 @@ function NavBar() {
       </nav>
       <div className="ls-btn">
         <div id="login">
-          <a href="http://localhost:1001/login">Login</a>
+          <Link href="/login">
+            <a>Login</a>
+          </Link>
         </div>
         <div id="signup">
-          <a href="http://localhost:1001/signup">Signup</a>
+          <Link href="/signup">
+            <a>Signup</a>
+          </Link>
         </div>
       </div>
     </header>
