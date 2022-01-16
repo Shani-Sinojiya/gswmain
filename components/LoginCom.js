@@ -30,11 +30,7 @@ const LogIn = () => {
       "Content-Type": "application/json",
     };
     let reqOptions = {
-<<<<<<< HEAD
-      url: "http://192.168.0.112:8080/api/auth/login",
-=======
-      url: "http://localhost:8080/api/auth/login",
->>>>>>> 6c17a0d030f5bc8f7bf89997f9106953ea3b665c
+      url: "https://gswbackend.herokuapp.com/api/auth/login",
       method: "POST",
       headers: headersList,
       data: data,

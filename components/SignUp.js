@@ -39,7 +39,7 @@ const SignUp = () => {
         "Content-Type": "application/json",
       };
       let reqOptions = {
-        url: "http://192.168.0.112:8080/api/auth/register",
+        url: "https://gswbackend.herokuapp.com/api/auth/register",
         method: "POST",
         headers: headersList,
         data: data,
@@ -50,8 +50,10 @@ const SignUp = () => {
         window.alert("sign up successfully");
         router.push("/login");
       } else {
-        console.log(api);
         setLoding(false);
+        if (api.status === 400) {
+          window.alert("pls fill a valid inputs");
+        }
       }
     } else {
       window.alert("password are not match");
