@@ -1,8 +1,8 @@
+import axios from "axios";
+import Head from "next/head";
 import MainHead from "../../components/MainHead";
 import NavBar from "../../components/GswNavBar";
-import Head from "next/head";
 import Footer from "../../components/Footer";
-import axios from "axios";
 
 const std = ({ data }) => {
   const { img, id, price, disc } = data;
